@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <button class="view btn">Mostrar imagen</button>
+        <button class="add btn">Aumentar imagen</button>
+        <button class="add_desc btn">Aumentar contenido</button>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="columna">
+                <img  src="./img/uno.jpg" alt="">
+              
+            </div>
+            <div class="columna">
+                <img   src="./img/dos.jpg" alt="">
+                
+            </div>
+            <div class="columna">
+                <img   src="./img/tres.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="form_colum image">
+                <i class="fa-solid fa-xmark"></i>
+                <label for="file"><i class="fa-solid fa-cloud-arrow-up"></i>Cargar Imagen</label>
+                <input type="file" style="display: none;" id="file" accept="image/*">
+                <br>
+                <img  id="Previsualizacion">
+            </div>
+
+            <div class="form_colum des">    
+                <label>Descripción:</label>
+                <input class="desc"
+                placeholder="Descripcion"
+                type="text">
+            </div>
+            <button class="btn_save">Guardar</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            Footer
+        </div>
+        <button class="luna">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
